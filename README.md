@@ -1,6 +1,6 @@
 # Notes App
 
-![screen recording](https://media.giphy.com/media/w25FKWHe4P37k5ANjW/giphy.gif)
+![screen recording](https://media.giphy.com/media/eTEnz5qIFNjJ2rLQ4y/giphy.gif)
 
 #### project notes
 
