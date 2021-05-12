@@ -27,10 +27,23 @@ function addNote() {
 
 function editOrDelete(e) {
   const item = e.target;
+  const editBtns = document.querySelectorAll('.editBtn');
+  const index = Array.from(editBtns).indexOf(item);
 
   if ( item.classList[2] === 'editBtn' ) {
     const note = item.parentElement.nextElementSibling;
-    note.toggleAttribute('readOnly');
+    if ( note.tagName === 'TEXTAREA' ) {
+      const div = document.createElement('div');
+      div.classList.add('textarea');
+      note.replaceWith(div);
+      div.innerHTML = marked(`${note.value}`);
+    } else {
+      let notes = JSON.parse(localStorage.getItem('notes'));
+      const textarea = document.createElement('textarea');
+      textarea.classList.add('textarea');
+      note.replaceWith(textarea);
+      textarea.textContent = notes[index];
+    }
   }
 
   if ( item.classList[2] === 'deleteBtn' ) {
