@@ -17,8 +17,18 @@
 - add note click event listener
 - edit/save click event listener toggle
 - delete click event listener
-- use a library for markdown(marked) --- needs to be done!
+- use a library for markdown(marked)
 
 - Challenge from Brad Traversy & Florin Pop on Udemy '50 Projects in 50 Days'
 
 #### Takeaways from the instructor
+
+1. HTML
+
+- div instead of form
+- i tags wrapped by button tags
+- textarea tag wrapped by div tag + div toggle class 'hidden'
+
+2. CSS
+
+- add button - position fixed
